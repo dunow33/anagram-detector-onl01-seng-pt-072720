@@ -10,10 +10,7 @@ class Anagram
     words = []
     
     anagrams.each do | aword |
-      puts aword.split
-      #puts
-      #puts word.split
-      if aword.split == word.split
+      if aword.split.sort == word.split.sort
         words << aword
       end
     end
