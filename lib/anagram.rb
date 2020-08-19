@@ -13,10 +13,10 @@ class Anagram
     
     anagrams.each do | aword |
       if aword.split("").sort == word.split("").sort
-        words << aword
+        @@words << aword
       end
     end
     
-    words
+    @@words
   end
 end 
