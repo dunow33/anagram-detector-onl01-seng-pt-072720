@@ -7,8 +7,11 @@ class Anagram
   end
   
   def match(anagrams)
-    anagrams.each do | word |
-      if word.sort
+    words = []
+    
+    anagrams.each do | aword |
+      if aword.sort == word
+        words << aword
     end
   end
 end
