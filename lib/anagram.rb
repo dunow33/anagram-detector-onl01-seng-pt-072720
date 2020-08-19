@@ -10,7 +10,7 @@ class Anagram
     words = []
     
     anagrams.each do | aword |
-      if aword.chars.sort(&:casecmp) == word
+      if aword.chars.sort == word
         words << aword
       end
     end
