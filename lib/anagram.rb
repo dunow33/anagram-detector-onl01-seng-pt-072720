@@ -10,7 +10,7 @@ class Anagram
     words = []
     
     anagrams.each do | aword |
-      puts 
+      puts aword.chars.sort_by(&:downcase)
       if aword.chars.sort_by(&:downcase).join == word
         words << aword
       end
