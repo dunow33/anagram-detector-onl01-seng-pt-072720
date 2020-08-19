@@ -10,7 +10,7 @@ class Anagram
     words = []
     
     anagrams.each do | aword |
-      if aword.chars.sort{|a,b| b - a }.join == word
+      if my_string.chars.sort.join == word
         words << aword
       end
     end
